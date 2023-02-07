@@ -1,3 +1,5 @@
+"./Core/Src/GlobalDataKeeper.o"
+"./Core/Src/QR.o"
 "./Core/Src/advanceglcd.o"
 "./Core/Src/button.o"
 "./Core/Src/font.o"

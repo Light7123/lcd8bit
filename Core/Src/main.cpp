@@ -121,6 +121,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_UART5_Init();
+  MX_UART4_Init();
   /* USER CODE BEGIN 2 */
 
 glcd_on();
@@ -143,6 +144,8 @@ HAL_GPIO_WritePin(GPIOB,  GPIO_PIN_8, GPIO_PIN_RESET);
 
 	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 	 read_button();
+		if(selectedMenuItem->payload.callback != nullptr)
+			selectedMenuItem->payload.callback();
 	  //HAL_Delay(100);
 
 	//  HAL_UART_Transmit(&huart5, (uint8_t*)"hello", 5, 500);

@@ -18,6 +18,7 @@
 #include "vector"
 #include "string"
 #include "main.h"
+#include "GlobalDataKeeper.h"
 
 #define NumofParam 7
 
@@ -29,8 +30,10 @@ enum Menu_pointer
 	start_menu_ptr,
 	stat_menu_ptr,
 	diag_menu_ptr,
-	setting_menu_ptr
-
+	setting_menu_ptr,
+	input_value_range10_ptr,
+	input_value_float,
+	input_value_float2
 
 };
 enum number_of_button
@@ -173,7 +176,7 @@ extern Row* setting_menu;
 extern Row* start_menu;
 extern Row* stat_menu;
 extern Row* diag_menu;
-
+extern GlobalDataKeeper* data;
 void default_settings(void);
 
 void menu_init();

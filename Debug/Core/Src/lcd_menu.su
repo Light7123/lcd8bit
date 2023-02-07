@@ -4,20 +4,20 @@
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7-m/nofp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:460:7:std::__cxx11::_List_base<_Tp, _Alloc>::_List_base() [with _Tp = Row*; _Alloc = std::allocator<Row*>]	16	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:673:7:std::__cxx11::list<_Tp, _Alloc>::list() [with _Tp = Row*; _Alloc = std::allocator<Row*>]	16	static
-../Core/Inc/lcd_menu.h:66:8:Payload::~Payload()	16	static
-../Core/Inc/lcd_menu.h:66:8:Payload::Payload(const Payload&)	16	static
-../Core/Inc/lcd_menu.h:96:2:Row::Row(const Payload&)	16	static
-../Core/Inc/lcd_menu.h:108:2:Row::Row(const Payload&, Row*, Row*, Row*)	32	static
-../Core/Inc/lcd_menu.h:130:7:Row* Row::addNextRow(const Payload&)	40	static
-../Core/Inc/lcd_menu.h:137:7:Row* Row::addRow(const Payload&)	32	static
-../Core/Inc/lcd_menu.h:152:7:bool Row::hasChildren() const	16	static
-../Core/Inc/lcd_menu.h:161:7:Row* Row::begin()	16	static
-../Core/Inc/lcd_menu.h:165:7:Row* Row::end() const	16	static
-../Core/Src/lcd_menu.cpp:115:6:void menu_init()	3768	static
-../Core/Src/lcd_menu.cpp:211:6:void menu_output(Row*)	168	static
-../Core/Src/lcd_menu.cpp:265:6:void startMenu()	8	static
-../Core/Src/lcd_menu.cpp:271:6:void menu_debug(Row*)	24	static
-../Core/Src/lcd_menu.cpp:290:6:void selectSwitch(Row*, int, int)	64	static
+../Core/Inc/lcd_menu.h:69:8:Payload::~Payload()	16	static
+../Core/Inc/lcd_menu.h:69:8:Payload::Payload(const Payload&)	16	static
+../Core/Inc/lcd_menu.h:99:2:Row::Row(const Payload&)	16	static
+../Core/Inc/lcd_menu.h:111:2:Row::Row(const Payload&, Row*, Row*, Row*)	32	static
+../Core/Inc/lcd_menu.h:133:7:Row* Row::addNextRow(const Payload&)	40	static
+../Core/Inc/lcd_menu.h:140:7:Row* Row::addRow(const Payload&)	32	static
+../Core/Inc/lcd_menu.h:155:7:bool Row::hasChildren() const	16	static
+../Core/Inc/lcd_menu.h:164:7:Row* Row::begin()	16	static
+../Core/Inc/lcd_menu.h:168:7:Row* Row::end() const	16	static
+../Core/Src/lcd_menu.cpp:123:6:void menu_init()	3992	static
+../Core/Src/lcd_menu.cpp:223:6:void menu_output(Row*)	248	static
+../Core/Src/lcd_menu.cpp:307:6:void startMenu()	8	static
+../Core/Src/lcd_menu.cpp:313:6:void menu_debug(Row*)	24	static
+../Core/Src/lcd_menu.cpp:332:6:void selectSwitch(Row*, int, int)	64	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:379:2:std::__cxx11::_List_base<_Tp, _Alloc>::_List_impl::_List_impl() [with _Tp = Row*; _Alloc = std::allocator<Row*>]	16	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:1216:7:void std::__cxx11::list<_Tp, _Alloc>::push_back(std::__cxx11::list<_Tp, _Alloc>::value_type&&) [with _Tp = Row*; _Alloc = std::allocator<Row*>]	24	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:1055:7:bool std::__cxx11::list<_Tp, _Alloc>::empty() const [with _Tp = Row*; _Alloc = std::allocator<Row*>]	16	static
@@ -56,6 +56,6 @@
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h:154:2:) [with _Up = Row*; _Args = {Row* const&}; _Tp = std::_List_node<Row*>]	32	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h:103:7:_Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = std::_List_node<Row*>]	24	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/ext/new_allocator.h:191:7:constexpr __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::_M_max_size() const [with _Tp = std::_List_node<Row*>]	16	static
-../Core/Src/lcd_menu.cpp:304:1:void __static_initialization_and_destruction_0(int, int)	1816	static
-../Core/Src/lcd_menu.cpp:304:1:cpp)	8	static
-../Core/Src/lcd_menu.cpp:304:1:cpp)	8	static
+../Core/Src/lcd_menu.cpp:346:1:void __static_initialization_and_destruction_0(int, int)	1816	static
+../Core/Src/lcd_menu.cpp:346:1:cpp)	8	static
+../Core/Src/lcd_menu.cpp:346:1:cpp)	8	static

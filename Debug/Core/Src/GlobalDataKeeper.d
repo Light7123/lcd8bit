@@ -1,4 +1,5 @@
-Core/Src/lcd_menu.o: ../Core/Src/lcd_menu.cpp ../Core/Inc/lcd_menu.h \
+Core/Src/GlobalDataKeeper.o: ../Core/Src/GlobalDataKeeper.cpp \
+ ../Core/Inc/GlobalDataKeeper.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -21,11 +22,9 @@ Core/Src/lcd_menu.o: ../Core/Src/lcd_menu.cpp ../Core/Inc/lcd_menu.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- ../Core/Inc/main.h ../Core/Inc/GlobalDataKeeper.h ../Core/Inc/glcd.h \
- ../Core/Inc/font.h ../Core/Inc/gpio.h ../Core/Inc/main.h \
- ../Core/Inc/GlobalDataKeeper.h ../Core/Inc/button.h
-../Core/Inc/lcd_menu.h:
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+../Core/Inc/GlobalDataKeeper.h:
+../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
@@ -49,11 +48,3 @@ Core/Src/lcd_menu.o: ../Core/Src/lcd_menu.cpp ../Core/Inc/lcd_menu.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-../Core/Inc/main.h:
-../Core/Inc/GlobalDataKeeper.h:
-../Core/Inc/glcd.h:
-../Core/Inc/font.h:
-../Core/Inc/gpio.h:
-../Core/Inc/main.h:
-../Core/Inc/GlobalDataKeeper.h:
-../Core/Inc/button.h:

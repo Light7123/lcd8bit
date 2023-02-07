@@ -51,13 +51,12 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+
+/* USER CODE BEGIN EFP */
 extern int up_button;
 extern int down_button;
-extern int reset_button;
 extern int ok_button;
-extern int buttontimer;
-/* USER CODE BEGIN EFP */
-
+extern int reset_button;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

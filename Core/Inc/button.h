@@ -12,6 +12,8 @@ void button_moving_to_next_menu();
 int button_in_menu();
 uint8_t keyMenu(uint8_t param);
 void read_button(void);
+uint16_t read_button_set_data(uint8_t x, uint8_t y, int rangeMAX,int rangeMIN, uint8_t setNum);
+void button_input_value();
 
 
 #define KEY_UP				1

@@ -1,12 +1,15 @@
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7-m/nofp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
-../Core/Inc/lcd_menu.h:152:7:bool Row::hasChildren() const	16	static
-../Core/Inc/lcd_menu.h:165:7:Row* Row::end() const	16	static
-../Core/Src/button.cpp:20:6:void encoder_clear(uint8_t)	16	static
-../Core/Src/button.cpp:34:6:void button_moving_to_next_menu()	32	static
-../Core/Src/button.cpp:118:6:void tik_callback()	8	static
-../Core/Src/button.cpp:140:5:int button_in_menu()	16	static
-../Core/Src/button.cpp:185:9:uint8_t keyMenu(uint8_t)	16	static
-../Core/Src/button.cpp:230:6:void read_button()	8	static
+../Core/Inc/lcd_menu.h:155:7:bool Row::hasChildren() const	16	static
+../Core/Inc/lcd_menu.h:168:7:Row* Row::end() const	16	static
+../Core/Src/button.cpp:23:6:void encoder_clear(uint8_t)	16	static
+../Core/Src/button.cpp:37:6:void button_moving_to_next_menu()	32	static
+../Core/Src/button.cpp:121:6:void tik_callback()	8	static
+../Core/Src/button.cpp:143:5:int button_in_menu()	16	static
+../Core/Src/button.cpp:188:6:void button_input()	4	static
+../Core/Src/button.cpp:217:9:uint8_t keyMenu(uint8_t)	16	static
+../Core/Src/button.cpp:265:6:void read_button()	8	static
+../Core/Src/button.cpp:373:6:void button_input_value()	24	static
+../Core/Src/button.cpp:406:10:uint16_t read_button_set_data(uint8_t, uint8_t, int, int, uint8_t)	72	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:1055:7:bool std::__cxx11::list<_Tp, _Alloc>::empty() const [with _Tp = Row*; _Alloc = std::allocator<Row*>]	16	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:1130:7:std::__cxx11::list<_Tp, _Alloc>::reference std::__cxx11::list<_Tp, _Alloc>::back() [with _Tp = Row*; _Alloc = std::allocator<Row*>]	24	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:1114:7:std::__cxx11::list<_Tp, _Alloc>::reference std::__cxx11::list<_Tp, _Alloc>::front() [with _Tp = Row*; _Alloc = std::allocator<Row*>]	24	static
@@ -20,6 +23,6 @@
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/bits/stl_list.h:200:7:std::_List_iterator< <template-parameter-1-1> >::_List_iterator(std::__detail::_List_node_base*) [with _Tp = Row*]	16	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h:72:7:_Tp* __gnu_cxx::__aligned_membuf<_Tp>::_M_ptr() [with _Tp = Row*]	16	static
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/ext/aligned_buffer.h:64:7:void* __gnu_cxx::__aligned_membuf<_Tp>::_M_addr() [with _Tp = Row*]	16	static
-../Core/Src/button.cpp:314:1:void __static_initialization_and_destruction_0(int, int)	16	static
-../Core/Src/button.cpp:314:1:cpp)	8	static
-../Core/Src/button.cpp:314:1:cpp)	8	static
+../Core/Src/button.cpp:510:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../Core/Src/button.cpp:510:1:cpp)	8	static
+../Core/Src/button.cpp:510:1:cpp)	8	static
