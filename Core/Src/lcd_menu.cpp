@@ -184,21 +184,21 @@ void menu_init()
 	//������������������������������������������������������ ������������������������������������������������������������
 	setting_menu->parent=start_menu;
 	setting_menu->addRow({"kalibrovka",16})->children.push_back(kalibrovka);
-		kalibrovka->addRow({"rashod",45,8*9,&data->rashodomer,button_input_value,zero_buttons,NULL,input_value_float})->parent=setting_menu;
+		kalibrovka->addRow({"rashod",45,8*8,&data->rashodomer,button_input_value,zero_buttons,NULL,input_value_float})->parent=setting_menu;
 	setting_menu->addRow({"ustirovka",17})->children.push_back(ustirowka);
-		ustirowka->addRow({"obem 1",46,8*11,&data->ust1,button_input_value,zero_buttons,NULL,input_value_float2})->parent=setting_menu;
-		ustirowka->addRow({"obem 2",47,8*11,&data->ust2,button_input_value,zero_buttons,NULL,input_value_float2})->parent=setting_menu;
-		ustirowka->addRow({"obem 3",48,8*11,&data->ust3,button_input_value,zero_buttons,NULL,input_value_float2})->parent=setting_menu;
+		ustirowka->addRow({"obem 1",46,8*9,&data->ust1,button_input_value,zero_buttons,NULL,input_value_float2})->parent=setting_menu;
+		ustirowka->addRow({"obem 2",47,8*9,&data->ust2,button_input_value,zero_buttons,NULL,input_value_float2})->parent=setting_menu;
+		ustirowka->addRow({"obem 3",48,8*9,&data->ust3,button_input_value,zero_buttons,NULL,input_value_float2})->parent=setting_menu;
 	setting_menu->addRow({"price",18})->children.push_back(price);
 		price->parent=setting_menu;
 		price->addRow({"obem",49})->children.push_back(price_obem);
-			price_obem->addRow({"obem 1",51,8*11,&data->price_ob1,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
-			price_obem->addRow({"obem 2",52,8*11,&data->price_ob2,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
-			price_obem->addRow({"obem 3",53,8*11,&data->price_ob3,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
+			price_obem->addRow({"obem 1",51,8*9,&data->price_ob1,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
+			price_obem->addRow({"obem 2",52,8*9,&data->price_ob2,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
+			price_obem->addRow({"obem 3",53,8*9,&data->price_ob3,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
 		price->addRow({"cena",50})->children.push_back(price_cena);
-			price_cena->addRow({"obem 1",54,8*11,&data->price_cost1,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
-			price_cena->addRow({"obem 2",55,8*11,&data->price_cost2,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
-			price_cena->addRow({"obem 3",56,8*11,&data->price_cost3,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
+			price_cena->addRow({"obem 1",54,8*9,&data->price_cost1,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
+			price_cena->addRow({"obem 2",55,8*9,&data->price_cost2,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
+			price_cena->addRow({"obem 3",56,8*9,&data->price_cost3,button_input_value,zero_buttons,NULL,input_value_float2})->parent=price;
 	setting_menu->addRow({"nichnie",19})->children.push_back(setting_nal);
 		setting_nal->parent=setting_menu;
 		setting_nal->addRow({"kupur",57})->children.push_back(setting_kupur);
@@ -250,21 +250,21 @@ void menu_output(Row* row)
 		{
 			if(setNum==4)
 			{
-				sprintf(ch1,"%04d", value);
+				sprintf(ch1,"[%04d]", value);
 			} else if(setNum ==3)
 			{
-				sprintf(ch1,"%03d", value);
+				sprintf(ch1,"[%03d]", value);
 			}else if(setNum == 2)
 			{
-				sprintf(ch1,"%02d", value);
+				sprintf(ch1,"[%02d]", value);
 			}
 			else if(setNum==5)
 			{
-				sprintf(ch1, "%02d.%01d", value/10,value%10);
+				sprintf(ch1, "[%02d.%01d]", value/10,value%10);
 			}
 			else if(setNum==6)
 					{
-						sprintf(ch1,"%01d.%03d",  value/1000, value%1000);
+						sprintf(ch1,"[%01d.%03d]",  value/1000, value%1000);
 					}
 			glcd_puts(ch1, row->payload.lcd_data_position, i);
 		}

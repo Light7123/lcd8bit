@@ -197,12 +197,12 @@ void button_input(void)
 	else
 		if(selectedMenuItem->payload.menu_ptr==input_value_float)
 		{
-			rangeInput=100;
+			rangeInput=1000;
 		}
 		else
 			if(selectedMenuItem->payload.menu_ptr==input_value_float2)
 			{
-				rangeInput=10;
+				rangeInput=100;
 			}
 			else
 		{
@@ -438,21 +438,21 @@ uint16_t read_button_set_data(uint8_t x, uint8_t y, int rangeMAX,int rangeMIN, u
 
 		if(setNum==4)
 		{
-			sprintf(ch,"%04d",inputValue);
+			sprintf(ch,"[%04d]",inputValue);
 		} else if(setNum ==3)
 		{
-			sprintf(ch,"%03d",inputValue);
+			sprintf(ch,"[%03d]",inputValue);
 		}else if(setNum == 2)
 		{
-			sprintf(ch,"%02d",inputValue);
+			sprintf(ch,"[%02d]",inputValue);
 		}
 		else if(setNum==5)
 		{
-			sprintf(ch, "%02d.%01d", inputValue/10,inputValue%10);
+			sprintf(ch, "[%02d.%01d]", inputValue/10,inputValue%10);
 		}
 		else if(setNum==6)
 				{
-					sprintf(ch, "%01d.%03d", inputValue/1000,inputValue%1000);
+					sprintf(ch, "[%01d.%03d]", inputValue/1000,inputValue%1000);
 				}
 		glcd_puts(ch, x, y);
 
@@ -477,21 +477,21 @@ uint16_t read_button_set_data(uint8_t x, uint8_t y, int rangeMAX,int rangeMIN, u
 			inputValue_prev = inputValue = inputValueOLD;
 			if(setNum==4)
 			{
-				sprintf(ch,"%04d",inputValueOLD);
+				sprintf(ch,"[%04d]",inputValueOLD);
 			}else if(setNum ==3)
 			{
-				sprintf(ch,"%03d",inputValueOLD);
+				sprintf(ch,"[%03d]",inputValueOLD);
 			}else if(setNum == 2)
 			{
-				sprintf(ch,"%02d",inputValueOLD);
+				sprintf(ch,"[%02d]",inputValueOLD);
 			}
 			else if(setNum==5)
 			{
-				sprintf(ch, "%02d.%1d", inputValue/10,inputValue%10);
+				sprintf(ch, "[%02d.%1d]", inputValue/10,inputValue%10);
 			}
 			else if(setNum==6)
 					{
-						sprintf(ch, "%01d.%03d", inputValue/1000,inputValue%1000);
+						sprintf(ch, "[%01d.%03d]", inputValue/1000,inputValue%1000);
 					}
 
 			glcd_puts(ch, x, y);
