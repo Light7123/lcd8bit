@@ -26,6 +26,10 @@
 #include "glcd.h"
 #include "lcd_menu.h"
 #include "button.h"
+#include "string"
+#include "string.h"
+#include "strings.h"
+#include "qrcode.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,6 +94,13 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
    }
 
 }
+
+
+
+
+
+
+
 /* USER CODE END 0 */
 
 /**
@@ -126,15 +137,20 @@ int main(void)
 
 glcd_on();
 glcd_clear_all();
+
 //glcd_puts("HELLO_WORLD\n", 10, 10);
-menu_init();
-startMenu();
+//menu_init();
+//startMenu();
+QRcode qrcode;
 HAL_UART_Transmit_IT(&huart5, (uint8_t*)"hello", 5);
 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, GPIO_PIN_RESET);
 HAL_GPIO_WritePin(GPIOB,  GPIO_PIN_5, GPIO_PIN_RESET);
 HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
 HAL_GPIO_WritePin(GPIOB,  GPIO_PIN_7, GPIO_PIN_RESET);
 HAL_GPIO_WritePin(GPIOB,  GPIO_PIN_8, GPIO_PIN_RESET);
+qrcode.init();
+qrcode.create("Hello world.");
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -143,7 +159,7 @@ HAL_GPIO_WritePin(GPIOB,  GPIO_PIN_8, GPIO_PIN_RESET);
   {
 
 	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-	 read_button();
+	// read_button();
 		if(selectedMenuItem->payload.callback != nullptr)
 			selectedMenuItem->payload.callback();
 	  //HAL_Delay(100);

@@ -1,0 +1,11 @@
+../Core/Src/qrencode.c:20:10:modnn	16	static
+../Core/Src/qrencode.c:92:6:initrspoly	32	static
+../Core/Src/qrencode.c:112:6:appendrs	40	static
+../Core/Src/qrencode.c:131:6:stringtoqr	40	static
+../Core/Src/qrencode.c:204:15:ismasked	24	static
+../Core/Src/qrencode.c:227:6:fillframe	24	static
+../Core/Src/qrencode.c:282:6:applymask	24	static
+../Core/Src/qrencode.c:377:10:badruns	24	static
+../Core/Src/qrencode.c:399:5:badcheck	32	static
+../Core/Src/qrencode.c:462:6:addfmt	24	static
+../Core/Src/qrencode.c:488:6:qrencode	24	static
