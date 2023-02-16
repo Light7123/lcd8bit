@@ -158,7 +158,7 @@ void menu_init()
 	peref_menu->addRow({"Безнал",11})->children.push_back(beznal_peref);
 		beznal_peref->parent=peref_menu;
 		beznal_peref->addRow({"oplata qr",28})->children.push_back(oplata_qr);
-			oplata_qr->addRow({"status",31})->parent=beznal_peref;
+			oplata_qr->addRow({"status",31,NULL,NULL,QR,zero_buttons,NULL,qr_ptr})->parent=beznal_peref;
 		beznal_peref->addRow({"terminal",29})->children.push_back(terminal);
 			terminal->addRow({"status",32})->parent=beznal_peref;
 			terminal->addRow({"model",33})->parent=beznal_peref;

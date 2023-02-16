@@ -46,6 +46,8 @@ void send_command(unsigned char data);
 void goto_row(unsigned char y);
 void goto_column(unsigned char x);
 void glcd_clear_here(char x1,char x2, char y1,char y2);
+void glcd_dot(char x,char y);
+
 // Functions Code:
 
 #endif

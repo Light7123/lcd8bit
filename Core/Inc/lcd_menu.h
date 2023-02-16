@@ -33,7 +33,8 @@ enum Menu_pointer
 	setting_menu_ptr,
 	input_value_range10_ptr,
 	input_value_float,
-	input_value_float2
+	input_value_float2,
+	qr_ptr
 
 };
 enum number_of_button

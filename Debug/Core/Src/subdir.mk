@@ -9,7 +9,7 @@ C_SRCS += \
 ../Core/Src/font.c \
 ../Core/Src/frame.c \
 ../Core/Src/gpio.c \
-../Core/Src/qrencode.c \
+../Core/Src/qrcode.c \
 ../Core/Src/stm32f1xx_hal_msp.c \
 ../Core/Src/stm32f1xx_it.c \
 ../Core/Src/syscalls.c \
@@ -22,15 +22,14 @@ CPP_SRCS += \
 ../Core/Src/button.cpp \
 ../Core/Src/glcd.cpp \
 ../Core/Src/lcd_menu.cpp \
-../Core/Src/main.cpp \
-../Core/Src/qrcode.cpp 
+../Core/Src/main.cpp 
 
 C_DEPS += \
 ./Core/Src/advanceglcd.d \
 ./Core/Src/font.d \
 ./Core/Src/frame.d \
 ./Core/Src/gpio.d \
-./Core/Src/qrencode.d \
+./Core/Src/qrcode.d \
 ./Core/Src/stm32f1xx_hal_msp.d \
 ./Core/Src/stm32f1xx_it.d \
 ./Core/Src/syscalls.d \
@@ -49,7 +48,6 @@ OBJS += \
 ./Core/Src/lcd_menu.o \
 ./Core/Src/main.o \
 ./Core/Src/qrcode.o \
-./Core/Src/qrencode.o \
 ./Core/Src/stm32f1xx_hal_msp.o \
 ./Core/Src/stm32f1xx_it.o \
 ./Core/Src/syscalls.o \
@@ -62,8 +60,7 @@ CPP_DEPS += \
 ./Core/Src/button.d \
 ./Core/Src/glcd.d \
 ./Core/Src/lcd_menu.d \
-./Core/Src/main.d \
-./Core/Src/qrcode.d 
+./Core/Src/main.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -75,7 +72,7 @@ Core/Src/%.o Core/Src/%.su: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/GlobalDataKeeper.d ./Core/Src/GlobalDataKeeper.o ./Core/Src/GlobalDataKeeper.su ./Core/Src/advanceglcd.d ./Core/Src/advanceglcd.o ./Core/Src/advanceglcd.su ./Core/Src/button.d ./Core/Src/button.o ./Core/Src/button.su ./Core/Src/font.d ./Core/Src/font.o ./Core/Src/font.su ./Core/Src/frame.d ./Core/Src/frame.o ./Core/Src/frame.su ./Core/Src/glcd.d ./Core/Src/glcd.o ./Core/Src/glcd.su ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/lcd_menu.d ./Core/Src/lcd_menu.o ./Core/Src/lcd_menu.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/qrcode.d ./Core/Src/qrcode.o ./Core/Src/qrcode.su ./Core/Src/qrencode.d ./Core/Src/qrencode.o ./Core/Src/qrencode.su ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
+	-$(RM) ./Core/Src/GlobalDataKeeper.d ./Core/Src/GlobalDataKeeper.o ./Core/Src/GlobalDataKeeper.su ./Core/Src/advanceglcd.d ./Core/Src/advanceglcd.o ./Core/Src/advanceglcd.su ./Core/Src/button.d ./Core/Src/button.o ./Core/Src/button.su ./Core/Src/font.d ./Core/Src/font.o ./Core/Src/font.su ./Core/Src/frame.d ./Core/Src/frame.o ./Core/Src/frame.su ./Core/Src/glcd.d ./Core/Src/glcd.o ./Core/Src/glcd.su ./Core/Src/gpio.d ./Core/Src/gpio.o ./Core/Src/gpio.su ./Core/Src/lcd_menu.d ./Core/Src/lcd_menu.o ./Core/Src/lcd_menu.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/qrcode.d ./Core/Src/qrcode.o ./Core/Src/qrcode.su ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su ./Core/Src/usart.d ./Core/Src/usart.o ./Core/Src/usart.su
 
 .PHONY: clean-Core-2f-Src
 

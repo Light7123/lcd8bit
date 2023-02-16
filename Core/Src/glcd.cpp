@@ -7,143 +7,8 @@
 
 #include "glcd.h"
 
+/* Based on PCD8544 library by Limor Fried */
 
-//int char_to_int(char str)
-//{
-//	switch (str)
-//	{
-//	case 'А':
-//		return 128;
-//	case 'Б':
-//		return 129;
-//	case 'В':
-//		return 130;
-//	case 'Г':
-//		return 131;
-//	case 'Д':
-//		return 132;
-//	case 'Е':
-//		return 133;
-//	case 'Ж':
-//		return 134;
-//	case 'З':
-//		return 135;
-//	case 'И':
-//		return 136;
-//	case 'Й':
-//		return 137;
-//	case 'К':
-//		return 138;
-//	case 'Л':
-//		return 139;
-//	case 'М':
-//		return 140;
-//	case 'Н':
-//		return 141;
-//	case 'О':
-//		return 142;
-//	case 'П':
-//		return 143;
-//	case 'Р':
-//		return 144;
-//	case 'С':
-//		return 145;
-//	case 'Т':
-//		return 146;
-//	case 'У':
-//		return 147;
-//	case 'Ф':
-//		return 148;
-//	case 'Х':
-//		return 149;
-//	case 'Ц':
-//		return 150;
-//	case 'Ч':
-//		return 151;
-//	case 'Ш':
-//		return 152;
-//	case 'Щ':
-//		return 153;
-//	case 'Ъ':
-//		return 154;
-//	case 'Ы':
-//		return 155;
-//	case 'Ь':
-//		return 156;
-//	case 'Э':
-//		return 157;
-//	case 'Ю':
-//		return 158;
-//	case 'Я':
-//		return 159;
-//	case 'а':
-//		return 160;
-//	case 'б':
-//		return 161;
-//	case 'в':
-//		return 162;
-//	case 'г':
-//		return 163;
-//	case 'д':
-//		return 164;
-//	case 'е':
-//		return 165;
-//	case 'ж':
-//		return 166;
-//	case 'з':
-//		return 167;
-//	case 'и':
-//		return 168;
-//	case 'й':
-//		return 169;
-//	case 'к':
-//		return 170;
-//	case 'л':
-//		return 171;
-//	case 'м':
-//		return 172;
-//	case 'н':
-//		return 173;
-//	case 'о':
-//		return 174;
-//	case 'п':
-//		return 175;
-//	case 'р':
-//		return 224;
-//	case 'с':
-//		return 225;
-//	case 'т':
-//		return 226;
-//	case 'у':
-//		return 227;
-//	case 'ф':
-//		return 228;
-//	case 'х':
-//		return 229;
-//	case 'ц':
-//		return 230;
-//	case 'ч':
-//		return 231;
-//	case 'ш':
-//		return 232;
-//	case 'щ':
-//		return 232;
-//	case 'ъ':
-//		return 233;
-//	case 'ы':
-//		return 234;
-//	case 'ь':
-//		return 235;
-//	case 'э':
-//		return 236;
-//	case 'ю':
-//		return 237;
-//	case 'я':
-//		return 238;
-//	default:
-//		return (int)str;
-//	}
-//}
 
 void Delay(int t)
 {
@@ -391,6 +256,48 @@ void glcd_puts_point(char x,char y,char w){     //print point on x:x_axis y:y_ax
 		glcd_putImage(point,x);
 	}
 }
+//--------------------------------------
+void glcd_dot(char x,char y){     //print point on x:x_axis y:y_axis ,w:width
+	                                              //To draw a horizontal line : x = 0 to 127 , y = 0 to 63 , w = 1 to 63
+	                                              //To draw a vertical line   : x = 0 to 127 , y = 0 to 63 , w = (0 to 8)<= (y%8)
+	unsigned char point=0x00,dot,i=0;
+	dot=y%8;
+
+	y=(y/8);
+	if(dot==0)y-=1;
+
+			switch(dot){
+				case 0 :
+					point|=0x80;
+					break;
+				case 1 :
+					point|=0x01;
+					break;
+				case 2 :
+					point|=0x02;
+					break;
+				case 3 :
+					point|=0x04;
+					break;
+				case 4 :
+					point|=0x08;
+					break;
+				case 5 :
+					point|=0x10;
+					break;
+				case 6 :
+					point|=0x20;
+					break;
+				case 7 :
+					point|=0x40;
+					break;
+			}
+
+		glcd_gotoxy(x,y);
+		glcd_putImage(point,x);
+
+}
+//--------------------------------------
 //--------------------------------------
 void glcd_gotoxy(unsigned char x, unsigned char y){
 	Delay(T);

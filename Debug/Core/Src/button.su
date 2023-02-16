@@ -1,6 +1,6 @@
 /opt/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7-m/nofp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
-../Core/Inc/lcd_menu.h:155:7:bool Row::hasChildren() const	16	static
-../Core/Inc/lcd_menu.h:168:7:Row* Row::end() const	16	static
+../Core/Inc/lcd_menu.h:156:7:bool Row::hasChildren() const	16	static
+../Core/Inc/lcd_menu.h:169:7:Row* Row::end() const	16	static
 ../Core/Src/button.cpp:23:6:void encoder_clear(uint8_t)	16	static
 ../Core/Src/button.cpp:37:6:void button_moving_to_next_menu()	32	static
 ../Core/Src/button.cpp:121:6:void tik_callback()	8	static

@@ -57,6 +57,7 @@ extern int up_button;
 extern int down_button;
 extern int ok_button;
 extern int reset_button;
+void QR();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
