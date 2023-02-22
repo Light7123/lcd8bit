@@ -1,0 +1,4 @@
+../Core/Src/advanceglcd.c:3:6:glcd_axis	16	static
+../Core/Src/advanceglcd.c:17:6:glcd_plot	32	static
+../Core/Src/advanceglcd.c:34:6:GLCD_INIT	4	static
+../Core/Src/advanceglcd.c:44:7:glcd_line	32	static
